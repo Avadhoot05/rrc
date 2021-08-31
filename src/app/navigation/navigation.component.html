@@ -2,8 +2,8 @@
     <div class="nav-container" >
         <a [routerLink]="['/']" style="text-decoration: none;">
             <div class="logo-container">
-                <h1 class="nav-logo">AJ</h1>
-                <h2 class="nav-logo-tagline" style="color: var(--primary-color);">Abhishek <span class="nav-logo-tagline" style="color: var(--secondary-color);"> Jagushte</span></h2>
+                <h1 class="nav-logo">{{ initials }}</h1>
+                <h2 class="nav-logo-tagline" style="color: var(--primary-color);">{{name}} <span class="nav-logo-tagline" style="color: var(--secondary-color);"> {{surname}}</span></h2>
             </div>
         </a>
         <ul class="nav-menu">
@@ -32,8 +32,8 @@
 <div class="side-nav-container" >
     <a [routerLink]="['/']" style="text-decoration: none;">
         <div class="logo-container">
-            <h1 class="nav-logo">AJ</h1>
-            <h2 class="nav-logo-tagline" style="color: var(--primary-color);">Abhishek <span class="nav-logo-tagline" style="color: var(--secondary-color);"> Jagushte</span></h2>
+            <h1 class="nav-logo">{{ initials }}</h1>
+            <h2 class="nav-logo-tagline" style="color: var(--primary-color);">{{name}} <span class="nav-logo-tagline" style="color: var(--secondary-color);"> {{surname}}</span></h2>
         </div>
     </a>
     <ul class="nav-menu">

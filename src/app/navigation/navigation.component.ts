@@ -1,4 +1,5 @@
 import { Component, OnInit, NgZone } from '@angular/core';
+import { AboutDataService } from '../data/about-data.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,15 +8,19 @@ import { Component, OnInit, NgZone } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  menuExpanded: boolean = false
+  initials!: string 
+  name!: string 
+  surname!: string
 
-
-  menuExpanded: boolean = false;
-
-  constructor(private zone: NgZone) {
+  constructor(private aboutData: AboutDataService) {
 
   }
 
   ngOnInit(): void {
+    this.initials = this.aboutData.initials
+    this.name = this.aboutData.name
+    this.surname = this.aboutData.surname
   }
 
   hamburgerMenuClicked(){

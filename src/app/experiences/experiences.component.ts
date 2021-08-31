@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperiencesService } from '../data/experiences.data';
+import { ExperiencesService } from '../data/experiences.service';
 import { Experience } from '../models/experience.model';
 
 @Component({
