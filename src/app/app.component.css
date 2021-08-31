@@ -1,0 +1,11 @@
+.app-container{
+    flex: 1;
+    background-color: var(--background-color-primary);
+    padding-left: 13rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .app-container{
+        padding-left: 0px;
+    }
+}

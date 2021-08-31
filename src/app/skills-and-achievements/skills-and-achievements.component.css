@@ -1,0 +1,179 @@
+.content-container {
+  padding: 0em 2.5em 8em 2.5em;
+}
+
+.skills {
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+.icon-reveal {
+  /* animation: icon-reveal 0.2s ease 0.1s 1 forwards; */
+}
+
+@keyframes icon-reveal {
+  0% {
+    opacity: 0;
+    transform: perspective(20px);
+  }
+
+  40% {
+    opacity: 0.4;
+    transform: perspective(20px);
+  }
+  60% {
+    opacity: 0.6;
+    transform: perspective(20px);
+  }
+  75% {
+    opacity: 0.75;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+.chart {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  width: 75%;
+  height: 42rem;
+  position: relative;
+}
+
+.bar-col-icon {
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.chart-column-name {
+  display: block;
+  font-size: 1.7rem;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.skill-bar {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running graph-bar;
+}
+
+.skill:hover .chart-column-name{
+  color: var(--secondary-color);
+}
+
+.skill:hover {
+  box-shadow: 0 0 8px 0px black;
+}
+
+@keyframes graph-bar {
+  100% {
+    bottom: 0;
+  }
+}
+
+.skill {
+  height: 100%;
+  width: 17%;
+  display: inline-block;
+  margin: 0% 3%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.chart-line {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background-color: var(--border-color);
+}
+
+.chart-label {
+  position: absolute;
+  right: 0;
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  width: 75%;
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+}
+
+.technology-icon {
+  height: 10rem;
+}
+
+.icon-container {
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .chart {
+    width: 75%;
+  }
+
+  .chart-label {
+    font-size: 2rem;
+  }
+
+  .technologies-grid {
+    grid-template-columns: 4;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .chart {
+    width: 100%;
+  }
+
+  .skill {
+    margin: 0% 4%;
+  }
+
+  .chart-label {
+    font-size: 1.8rem;
+  }
+
+  .chart-column-name {
+    font-size: 1rem;
+  }
+
+  .chart-label {
+    font-size: 1rem;
+  }
+
+  .technologies-grid {
+    grid-template-columns: 3;
+    width: 100%;
+  }
+
+  .bar-col-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}

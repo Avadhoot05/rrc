@@ -1,0 +1,66 @@
+<div class="heading-container">
+  <h1 class="content-heading">Contact Me</h1>
+</div>
+<div class="content-container">
+  <div class="form-box">
+    <p class="content">Like my work? Well you can reach me out!</p>
+    <br />
+    <form (ngSubmit)="submitClicked(f)" #f = "ngForm">
+        <input type="hidden" name="form-name" value="contact-form"/>
+      <input
+      id="name"
+      name="name"
+      type="text"
+      [(ngModel)]="contact.name"
+      class="input col"
+      style="margin-right: 2%"
+      placeholder="First Name"
+      required
+      #name = "ngModel"/>
+      
+      <input
+      id="surname"
+      name="surname"
+      [(ngModel)]="contact.surname"
+      type="text"
+      class="input col"
+      placeholder="Last Name"
+      required
+      />
+      
+      
+      <input
+      type="email"
+      name="email"
+      [(ngModel)]="contact.email"
+      placeholder="Email"
+      class="input"
+      required
+      email
+      />
+      
+      
+      <textarea
+      name="message"
+      id="message"
+      cols="30"
+      [(ngModel)]="contact.message"
+      rows="10"
+      class="input"
+      placeholder="Message"
+      required
+      ></textarea>
+      <button id="submit" type="submit" class="button" [disabled]="!f.valid">Send</button>
+      
+      <p *ngIf="status==success" class="content" class="content status-message" id="success-msg">Thanks for you message, I will reach you out soon!</p>
+      <p *ngIf="status==failure" class="content" class="content status-message" id="failure-msg">There was an error</p>
+      <p *ngIf="status==loading" class="content" class="content status-message" id="loading-msg">Please Wait...</p>
+    </form>
+</div>
+
+<p class="content"> Not a fan of forms? You can also <a class="content link" href="mailto:abhishekjagushte@gmail.com">Email</a> me or reach me out to any of my social media handles!</p>
+
+<button class="nav-button transition-background" [routerLink]="['/']">
+    Profile
+</button>
+</div>

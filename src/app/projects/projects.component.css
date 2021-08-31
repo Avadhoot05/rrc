@@ -1,0 +1,9 @@
+.content-container{
+    padding: 0em 2.5em 8em 2.2em;
+}
+
+@media screen and (max-width: 900px) {
+    .content-container{
+        padding: 0em 1.5rem 5em 1.5em;        
+    }
+}

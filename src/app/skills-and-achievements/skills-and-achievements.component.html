@@ -1,0 +1,117 @@
+<div class="heading-container">
+  <h1 class="content-heading">Skills...</h1>
+</div>
+<div class="content-container">
+  <h2 class="subheading2">Technologies</h2>
+  
+  <div class="chart">
+    <hr class="chart-line" style="bottom: 0%" />
+    <hr class="chart-line" style="bottom: 25%" />
+    <hr class="chart-line" style="bottom: 50%" />
+    <hr class="chart-line" style="bottom: 75%" />
+    <label class="chart-label" style="bottom: 25%">Beg.</label>
+    <label class="chart-label" style="bottom: 50%">Int.</label>
+    <label class="chart-label" style="bottom: 75%">Exp.</label>
+    
+    <div class="skills">
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/android.webp" alt="">
+        <label class="chart-column-name">Android</label>
+        <div
+        class="skill-bar"
+        style="height: 65%; background-color: #32de84"
+        ></div>
+      </div>
+      
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/nodejs.webp" alt="">
+        <label class="chart-column-name">NodeJS</label>
+        <div
+          class="skill-bar"
+          style="height: 50%; background-color: rgb(118, 187, 118)"
+          ></div>
+        </div>
+        
+        <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/angular.png" alt="">
+        <label class="chart-column-name">Angular</label>
+        <div
+        class="skill-bar"
+        style="height: 56%; background-color: rgb(212, 80, 80)"
+        ></div>
+      </div>
+      
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/firebase.png" alt="">
+        <label class="chart-column-name">Firebase</label>
+        <div
+          class="skill-bar"
+          style="height: 63%; background-color: orange"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="subheading2">Languages</h2>
+
+  <div class="chart">
+    <hr class="chart-line" style="bottom: 0%" />
+    <hr class="chart-line" style="bottom: 25%" />
+    <hr class="chart-line" style="bottom: 50%" />
+    <hr class="chart-line" style="bottom: 75%" />
+    <label class="chart-label" style="bottom: 25%">Beg.</label>
+    <label class="chart-label" style="bottom: 50%">Int.</label>
+    <label class="chart-label" style="bottom: 75%">Exp.</label>
+
+    <div class="skills">
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/kotlin.webp" alt="">
+        <label class="chart-column-name">Kotlin/Java</label>
+        <div
+        class="skill-bar"
+        style="height: 68%; background-color: rgb(226, 121, 35)"
+        ></div>
+      </div>
+      
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/c.webp" alt="">
+        <label class="chart-column-name">C/C++</label>
+        <div
+          class="skill-bar"
+          style="height: 52%; background-color: rgb(82, 72, 212)"
+          ></div>
+        </div>
+        
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/python.png" alt="">
+        <label class="chart-column-name">Python</label>
+        <div
+        class="skill-bar"
+        style="height: 62%; background-color: rgb(230, 211, 38)"
+        ></div>
+      </div>
+      
+
+      <div class="skill">
+        <img class="bar-col-icon icon-reveal" src="../../assets/typescript.webp" alt="">
+        <label class="chart-column-name">Typescript</label>
+        <div
+        class="skill-bar"
+        style="height: 59%; background-color: rgb(54, 121, 197)"
+        ></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <h2 class="subheading2">Other Technologies</h2>
+  <div class="technologies-grid">
+    <div *ngFor="let icon of techIcons" class="icon-container icon-reveal">
+        <img  src="{{icon.path}}" class="technology-icon" alt="{{icon.name}}">
+        <p class="content" style="text-align: center;">{{ icon.name }}</p>
+    </div>    
+  </div>
+
+  <button class="nav-button transition-background" [routerLink]="['/contact']">Contact Me</button>
+  <button class="nav-button transition-background" [routerLink]="['/']">Profile</button>
+</div>

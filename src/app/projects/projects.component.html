@@ -1,0 +1,9 @@
+<div class="heading-container">
+    <h1 class="content-heading">My Projects</h1>
+</div>
+<div class="content-container">
+    <div class="grid-container">
+        <app-project *ngFor="let project of projects" [project]="project"></app-project>
+    </div>
+    <button class="nav-button transition-background" [routerLink]="['/experiences']">Experience</button>
+</div>

@@ -1,0 +1,22 @@
+<div class="rounded-box transition-background">
+  <a href="{{project.projectLink}}" target="_blank">
+  <div class="two-columns">
+    <!-- <div class="project-card-col-2">
+      <img class="project-display-img" src="{{project.imagePath}}" alt=""/>
+    </div> -->
+    <div class="project-card-col-1">
+      <h2 class="subheading2 rounded-box-title">{{project.title}}</h2>
+      <p class="col-1 content">
+        {{project.description}}
+      </p>
+      <h3 class="subheading3 rounded-box-heading">Tech Stack</h3>
+      <div class="horizontal-container">
+        <div  *ngFor="let icon of project.techStack" class="tooltip">
+          <img  src="{{icon.path}}" alt="{{icon.desc}}" class="tech-stack-icon">
+          <span class="tooltiptext">{{icon.desc}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </a>
+</div>

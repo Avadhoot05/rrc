@@ -1,0 +1,252 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&family=Yeon+Sung&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+:root{
+  /* --primary-color: #ee653b; */
+  --primary-color: #ff0b56;
+  --secondary-color: #08fdd8;
+  /* --secondary-color: rgb(227, 243, 87); */
+  --background-color-dark: #222222;
+  --background-color-primary: #1d1d1d;
+  --background-color-secondary:#252525;
+  --background-color-tertiary:#292929;
+  --font-style:  "Raleway", sans-serif;
+  --border-color: rgba(219, 219, 219,0.5);
+  --font-color: white;
+  --hover-level-0: #303030;
+  --hover-level-1: #404040;
+  --hover-level-2: #505050;
+  --main-badge-color: var(--hover-level-0);
+}
+
+* {
+  margin: 0px;
+  font-size: 11px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family:  "Raleway", sans-serif, sans-serif;
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar:hover{
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: var(--background-color-tertiary);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.nav-button {
+  outline: none;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--font-color);
+  background-color: var(--background-color-primary);
+  border: 2px solid var(--secondary-color);
+  box-shadow: 4px 4px var(--primary-color);
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.nav-button:hover {
+  border: 2px solid var(--primary-color);
+  box-shadow: 4px 4px var(--secondary-color);
+  background-color: var(--background-color-tertiary);
+}
+
+.content-heading {
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 7.3rem ;
+  line-height: 1.5;
+}
+
+.content {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--font-color);
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.content-container {
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-icon {
+  font-size: 1rem;
+  filter: invert(100%) sepia(94%) saturate(4%) hue-rotate(209deg) brightness(106%) contrast(96%);
+  transition: filter 200ms ease;
+}
+
+.profile-icon:hover{
+  filter: invert(20%) sepia(70%) saturate(7489%) hue-rotate(334deg) brightness(100%) contrast(102%);
+}
+
+.profile-icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+.heading-container{
+  padding: 3em 3em;
+  /* background-color: #302e2e; */
+}
+
+
+.subheading2{
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+}
+
+.subheading3{
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--font-color);
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.list{
+  margin-top: 2rem;
+}
+
+.list li{
+  list-style: upper-roman;
+  padding-left: 1.3rem;
+  margin-left: -2rem;
+}
+
+.transition-background{
+  transition: background-color 300ms ease;
+}
+
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 1400px) {
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .content-heading {
+    font-size: 7.3rem
+  }
+}
+
+@media (max-width: 1140px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .two-columns {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .heading-container{
+    padding: 1.5em 1.5em;
+    /* background-color: #302e2e; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content-heading {
+    font-size: 5.3rem
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 550px) {
+  .content-heading {
+    font-size: 4.5rem
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-heading {
+    font-size: 3rem
+  }
+  
+  *{
+    font-size: 10px;
+  }
+}

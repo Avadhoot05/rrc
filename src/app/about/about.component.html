@@ -1,0 +1,61 @@
+<div class="content-container">
+  <section class="profile-container content-padding center-responsive">
+    <div class="header">
+      <div class="profile-image-container center-responsive">
+        <div class="badge-art">
+          <img
+          src="../../assets/mypic1600.webp"
+          srcset="../../assets/mypic375.webp 400w, ../../assets/mypic768.webp 768w, ../../assets/mypic1600.webp 1600w"
+          sizes="(max-width:375px) 375px, (max-width:768px) 768px, (max-width:1440px) 1600px, 1600px" 
+          alt="Image of Abhishek Jagushte"
+          class="profile-image"
+          />
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="name-container">
+          <h1 class="name">{{ name }} {{ surname }}</h1>
+          <h1 class="name name-responsive">{{ name }}</h1>
+        </div>
+        <div class="tagline-container">
+          <p class="tagline">{{ tagline }}</p>
+        </div>
+        <br>
+        <div class="horizontal-container center-responsive">
+          <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="Email me by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"><img src="../../assets/resume.svg" alt="View my resume by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="Visit my linkedin page by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="Check out my github account by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="Visit my instagram handle by clicking here" class="profile-icon"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-padding">
+    <h1 class="subheading2">What do I do?</h1>
+    <br>
+    <div class="two-columns">
+      <!-- <div class="col-1"></div> -->
+      <div class="col-1">
+        <p class="content">
+          I like developing new projects and exploring new technologies. I have
+          a passion for good UI experience. I have explored and developed projects on Android Platform as well as web frameworks.
+        </p>
+        <br />
+        <p class="content">
+          I am fluent in various object oriented programming languages like
+          Java, Python, Kotlin yet constantly exploring them more. Apart from that I've been exploring competitive programming with the help of Data Structures and Algorithms, solving more and more problems with C/C++.
+        </p>
+        <br>
+        <p class="content">
+          I have released an Android Application on Google Play Store and have
+          developed several applications as learning challenges in Java, Python
+          and Kotlin.
+        </p>
+        <br /><br />
+      </div>
+    </div>
+    <button class="nav-button transition-background" [routerLink]="['/projects']">Projects</button>
+  </section>
+</div>
