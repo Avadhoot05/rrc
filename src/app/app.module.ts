@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SimpleSectionComponent } from './shared/simple-section/simple-section.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     ProjectDetailComponent,
     ExperiencesComponent,
     PageNotFoundComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    SimpleSectionComponent
   ],
   imports: [
     BrowserModule,

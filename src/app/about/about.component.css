@@ -7,19 +7,35 @@
   background-color: var(--background-color-secondary);
 }
 
+.header{
+  display: flex;
+  flex-basis: 500px;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.verticle-divider{
+  border: 2px solid white;
+  margin: 3rem 0;
+height: 300px;
+}
+
 .content-padding {
   padding: 4em 2.5em 8em 2.5em;
 }
 
 .profile-image-container {
-  margin-bottom: 4em;
+  /* margin-bottom: 4em; */
   display: flex;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
-  width: max-content;
+  
 }
 .badge-art {
   height: 25rem;
@@ -49,13 +65,22 @@
   }
 }
 
-.name {
+.name-heading{
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 10.3rem;
-  line-height: 1.5;
-  display: block;
   text-shadow: 4px 4px var(--primary-color), 5px 5px var(--secondary-color);
+  display: block;
+}
+
+.name {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  display: block;
+}
+
+.surname{
+  font-size: 8rem;
+  line-height: 1.5;
 }
 
 .tagline-container{
@@ -66,8 +91,9 @@
 .tagline {
   color: var(--primary-color);
   font-family: "Source Code Pro", monospace;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 
+  max-width: 100%;
 }
 
 .name:hover {
@@ -79,17 +105,31 @@
   display: none;
 }
 
-@media screen and (max-width: 1400px) {
-  .name {
+@media screen and (max-width: 1300px) {
+  /* .name {
     font-size: 10.3rem;
     line-height: 1.5;
-  }
-}
+  } */
 
-@media screen and (max-width: 1100px) {
-  .name {
-    font-size: 8.3rem;
-    line-height: 1.5;
+  .verticle-divider{
+    display: none;
+  }
+
+  .header{
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .name, .surname{
+    text-align: center;
+  }
+
+  .name{
+    font-size: 4rem;
+  }
+
+  .surname{
+    font-size: 6rem;
   }
 
   .center-responsive{
@@ -100,13 +140,10 @@
   .tagline{
     text-align: center;
   }
+
 }
 
 @media screen and (max-width: 900px) {
-  .name {
-    font-size: 6.3rem;
-    line-height: 1.5;
-  }
 
   .content-padding{
     padding: 4em 1.5em 8em 1.5em;
@@ -114,43 +151,39 @@
 }
 
 @media screen and (max-width: 700px) {
-  .name {
-    font-size: 5.6rem;
-    line-height: 1.5;
+  .name{
+    font-size: 3.5rem;
+  }
+
+  .surname{
+    font-size: 5.3rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .name {
-    display: none;
-    font-size: 7.3rem;
-    line-height: 7rem;
+  .name{
+    font-size: 3rem;
   }
 
-  .name-responsive{
-    display: block;
-  }
-
-  .tagline {
-    text-align: center;
+  .surname{
+    font-size: 4.7rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .name {
-    font-size: 6.5rem;
-    line-height: 7rem;
-  }
-
+ 
   .center-responsive{
     justify-content: center;
     align-items: center;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .name {
-    font-size: 6rem;
-    line-height: 7rem;
+@media screen and (max-width: 375px) {
+  .name{
+    font-size: 3rem;
+  }
+
+  .surname{
+    font-size: 4.3rem;
   }
 }

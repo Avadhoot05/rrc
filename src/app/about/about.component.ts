@@ -11,6 +11,11 @@ export class AboutComponent implements OnInit {
   name!: string 
   surname!: string
   tagline!: string
+  email: string = "mailto:rgitsroboticsclub@gmail.com"
+  linkedIn: string = "https://www.linkedin.com/in/abhishekjagushte/"
+  instagram: string = "https://www.instagram.com/abhishekjagushte/" 
+  brochure: string = "https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"
+  facebook: string = "https://www.instagram.com/abhishekjagushte/"
 
   constructor(private aboutdataService: AboutDataService) { }
 
@@ -18,6 +23,11 @@ export class AboutComponent implements OnInit {
     this.name = this.aboutdataService.name
     this.surname = this.aboutdataService.surname
     this.tagline = this.aboutdataService.tagline
+    this.email = this.aboutdataService.email
+    this.instagram = this.aboutdataService.instagram
+    this.linkedIn = this.aboutdataService.linkedIn
+    this.brochure = this.aboutdataService.brochure
+    this.facebook = this.aboutdataService.facebook
   }
 
 }

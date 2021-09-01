@@ -29,31 +29,27 @@
 </ng-template>
 
 
-<div class="side-nav-container" >
-    <a [routerLink]="['/']" style="text-decoration: none;">
-        <div class="logo-container">
-            <h1 class="nav-logo">{{ initials }}</h1>
-            <h2 class="nav-logo-tagline" style="color: var(--primary-color);">{{name}} <span class="nav-logo-tagline" style="color: var(--secondary-color);"> {{surname}}</span></h2>
-        </div>
-    </a>
-    <ul class="nav-menu">
-        <li class="nav-menu-item transition-background"
-        [routerLink]="['/']"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact: true}"
-        >Me</li>
-        <li class="nav-menu-item transition-background" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
-        <li class="nav-menu-item transition-background" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
-        <li class="nav-menu-item transition-background" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
-        <li class="nav-menu-item transition-background" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
+<div class="desktop-nav-container" >
+    
+        <a [routerLink]="['/']" class="logo-container-desktop" style="text-decoration: none;">
+            <!-- <div class=""> -->
+                <h1 class="nav-logo">{{ initials }}</h1>
+                <!-- <h2 class="nav-logo-tagline" style="color: var(--primary-color);">{{name}} <span class="nav-logo-tagline" style="color: var(--secondary-color);"> {{surname}}</span></h2> -->
+            <!-- </div> -->
+        </a>
+        
+        <ul class="nav-menu-desktop">
+            <li class="nav-menu-item-desktop transition-background"
+            [routerLink]="['/']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
+            >Me</li>
+            <li class="nav-menu-item-desktop transition-background" [routerLink]="['/projects']"  routerLinkActive="active">Projects</li>
+            <li class="nav-menu-item-desktop transition-background" [routerLink]="['/experiences']" routerLinkActive="active">Experience</li>
+            <li class="nav-menu-item-desktop transition-background" [routerLink]="['/skills']" routerLinkActive="active">Skills</li>
+        <li class="nav-menu-item-desktop transition-background" (click)="destinationChanged()" [routerLink]="['/contact']" routerLinkActive="active">Contact Me</li>
     </ul>
-    <div class="social-icons-container">
-        <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="Click here to email me" class="profile-icon"></a>
-        <a class="link-icon" target="_blank" href="https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"><img src="../../assets/resume.svg" alt="Click here to view my resume" class="profile-icon"></a>
-        <a class="link-icon" target="_blank" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="Click here to visit my LinkedIn Page " class="profile-icon"></a>
-        <a class="link-icon" target="_blank" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="Click here to visit my Github Page" class="profile-icon"></a>
-        <a class="link-icon" target="_blank" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="Click here to visit my Instagram handle" class="profile-icon"></a>
-    </div>
+   
 </div>
 
 <div *ngIf="!menuExpanded else navContainer"></div>

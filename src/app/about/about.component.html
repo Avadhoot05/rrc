@@ -12,21 +12,25 @@
           />
         </div>
       </div>
+
+      <div class="verticle-divider"></div>
+
       <div class="info-container">
         <div class="name-container">
-          <h1 class="name">{{ name }} {{ surname }}</h1>
-          <h1 class="name name-responsive">{{ name }}</h1>
+          <h1 class="name-heading name">{{ name }}</h1>
+          <h1 class="name-heading surname"> {{ surname }}</h1>
+          <!-- <h1 class="name name-responsive">{{ name }}</h1> -->
         </div>
         <div class="tagline-container">
           <p class="tagline">{{ tagline }}</p>
         </div>
         <br>
         <div class="horizontal-container center-responsive">
-          <a class="link-icon" href="mailto:abhishekjagushte@gmail.com"><img src="../../assets/mail.svg" alt="Email me by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="https://drive.google.com/file/d/1ifZ1__nMWhbJyg-ZS53I_wKpCsLsPMAQ/view?usp=sharing"><img src="../../assets/resume.svg" alt="View my resume by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="https://www.linkedin.com/in/abhishekjagushte/"><img src="../../assets/linkedin.svg" alt="Visit my linkedin page by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="https://github.com/abhishekjagushte"><img src="../../assets/github.svg" alt="Check out my github account by clicking here" class="profile-icon"></a>
-          <a class="link-icon" target="_blank" href="https://www.instagram.com/abhishekjagushte/"><img src="../../assets/instagram.svg" alt="Visit my instagram handle by clicking here" class="profile-icon"></a>
+          <a class="link-icon" href="{{email}}"><img src="../../assets/mail.svg" alt="Email me by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{brochure}}"><img src="../../assets/resume.svg" alt="View my resume by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{linkedIn}}"><img src="../../assets/linkedin.svg" alt="Visit my linkedin page by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{instagram}}"><img src="../../assets/instagram.svg" alt="Visit my instagram handle by clicking here" class="profile-icon"></a>
+          <a class="link-icon" target="_blank" href="{{facebook}}"><img src="../../assets/instagram.svg" alt="Visit my facebook handle by clicking here" class="profile-icon"></a>
         </div>
       </div>
     </div>
