@@ -3,6 +3,9 @@ import { Project } from "../models/project.model";
 
 @Injectable({providedIn: "root"})
 export class ProjectsService{
+
+    pageName: string = "Achievements"
+
     projects: Project[] = [
         new Project("Attendance Organizer",
         "An intuitive attendance manager Android application for university students which gives insightful tips to 'organize' attendance.",
