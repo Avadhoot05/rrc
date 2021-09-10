@@ -17,6 +17,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SimpleSectionComponent } from './shared/simple-section/simple-section.component';
+import { RegistrationComponent } from './forms/registration/registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,16 +33,18 @@ import { SimpleSectionComponent } from './shared/simple-section/simple-section.c
     ExperiencesComponent,
     PageNotFoundComponent,
     ContactMeComponent,
-    SimpleSectionComponent
+    SimpleSectionComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

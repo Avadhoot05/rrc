@@ -1,0 +1,99 @@
+<div class="container">
+  <div class="heading-container">
+    <h1 class="content-heading">Register</h1>
+  </div>
+  <div class="content-container">
+    <div class="form-box">
+      <br />
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+        <input
+          id="name"
+          formControlName="name"
+          type="text"
+          class="input"
+          style="margin-right: 2%"
+          placeholder="Your Name"
+          required
+        />
+        <p
+          class="warning"
+          *ngIf="registrationForm.controls.name.invalid && submitClicked"
+        >
+          This field is required
+        </p>
+
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email"
+          class="input"
+          required
+          email
+        />
+        <p
+          class="warning"
+          *ngIf="registrationForm.controls.email.invalid && submitClicked"
+        >
+          this field is required and must be in correct format.
+        </p>
+
+        <input
+          type="number"
+          formControlName="number"
+          placeholder="Contact"
+          class="input"
+          required
+        />
+        <p
+          class="warning"
+          *ngIf="registrationForm.controls.number.invalid && submitClicked"
+        >
+          This field is required
+        </p>
+
+        <input
+          id="name"
+          formControlName="college"
+          type="text"
+          class="input"
+          style="margin-right: 2%"
+          placeholder="Institute Name"
+          required
+        />
+        <p
+          class="warning"
+          *ngIf="registrationForm.controls.college.invalid && submitClicked"
+        >
+          This field is required
+        </p>
+
+        <select formControlName="yos">
+          <option *ngFor="let opt of yearOfStudy" value="{{ opt.id }}">
+            {{ opt.name }}
+          </option>
+        </select>
+        <p
+          class="warning"
+          *ngIf="registrationForm.controls.yos.invalid && submitClicked"
+        >
+          This field is required
+        </p>
+
+        <button id="submit" type="submit" class="button">Send</button>
+      </form>
+    </div>
+
+    <p class="content" *ngIf="isLoading && submitClicked">Please wait...</p>
+    <p
+      class="content"
+      *ngIf="!submitSuccess && submitClicked && !registrationForm.invalid"
+    >
+      Oops.. Something went wrong.
+    </p>
+    <p class="content" *ngIf="submitSuccess">We have recieved your response.</p>
+
+    <!-- <pre>
+    {{ registrationForm.value | json }}
+  </pre> -->
+  </div>
+</div>

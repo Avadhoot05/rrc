@@ -15,41 +15,40 @@
   background-color: var(--background-color-dark);
 }
 
-.logo-container-desktop{
+.logo-container-desktop {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.logo-container-desktop h1{
+.logo-container-desktop h1 {
   vertical-align: middle;
 }
 
-.logo-container{
+.logo-container {
   height: 12rem;
   margin-bottom: 3rem;
 }
 
-.nav-logo{
+.nav-logo {
   font-size: 5rem;
   text-align: center;
   color: var(--font-color);
   text-shadow: 6px 6px var(--primary-color), 8px 8px var(--secondary-color);
 }
 
-
-.nav-logo-tagline{
+.nav-logo-tagline {
   color: var(--font-color);
   text-align: center;
   font-size: 1.8rem;
 }
 
-.social-icons-container{
+.social-icons-container {
   margin-top: 5rem;
   margin-bottom: 3rem;
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -62,13 +61,13 @@
   align-items: center;
 }
 
-.nav-menu-desktop{
+.nav-menu-desktop {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-.nav-menu-item-desktop{
+.nav-menu-item-desktop {
   list-style: none;
   margin: auto;
   color: var(--primary-color);
@@ -79,10 +78,8 @@
   height: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-
-
-
 
 .nav-menu-item {
   list-style: none;
@@ -92,6 +89,7 @@
   padding: 6px 0px 6px 0px;
   font-size: 1.6rem;
   opacity: 1;
+  cursor: pointer;
 }
 
 .active {
@@ -105,7 +103,8 @@
   position: fixed;
   right: 2.5em;
   top: 2.5em;
-  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg) brightness(96%) contrast(108%);
+  filter: invert(90%) sepia(69%) saturate(5880%) hue-rotate(90deg)
+    brightness(96%) contrast(108%);
   display: none;
   z-index: 10;
 }
@@ -127,27 +126,27 @@
     opacity: 1;
     animation: nav-menu 0.4s ease-out 0s 1 forwards;
   }
-  
+
   @keyframes nav-menu {
-    100%{
-      top:0;
+    100% {
+      top: 0;
     }
   }
 
-  .nav-menu-item{
-      font-size: 2.4em;
-      line-height: 1.5;
+  .nav-menu-item {
+    font-size: 2.4em;
+    line-height: 1.5;
   }
 
-  .nav-menu{
+  .nav-menu {
     padding: 0px;
   }
 
   .hamburger-menu {
     display: block;
   }
-  
-  .desktop-nav-container{
+
+  .desktop-nav-container {
     display: none;
   }
 }
